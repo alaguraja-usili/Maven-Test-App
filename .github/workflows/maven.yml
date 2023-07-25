@@ -38,6 +38,3 @@ jobs:
       if: success() || failure() # always run even if the previous step fails
       with:
           report_paths: '**/build/test-results/test/TEST-*.xml'
-    
-    - name: Adding markdown
-      run: echo '### Hello world! ' >> $GITHUB_STEP_SUMMARY
